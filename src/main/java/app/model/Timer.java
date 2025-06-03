@@ -1,5 +1,10 @@
 package app.model;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@Component
+@ComponentScan(basePackages = "app")
 public class Timer {
 
     private Long nanoTime = System.nanoTime();
